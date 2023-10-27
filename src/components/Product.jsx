@@ -24,20 +24,24 @@ export default function Product({}) {
   return (
     <div className='product-container'>
       <h1 className="header">Product</h1>
-      <div className="sp-wrapper">
-        <div className="sp-img">
-          <img src={item?.image} alt="img"/>
-        </div>
-        <div className="sp-details">
-          <p className="sp-title">{item?.title}</p>
-          <p className="sp-desc">{item?.description}</p>
-          <p className="sp-price">price: ${item?.price} / </p>
-          <p className="sp-rate">{item?.rating.rate}<AiFillStar/></p>
-          <div className="add-btn">
-            <input type="button" value="Add to Cart" onClick={() => addCart(item)}/>
+      {
+        item && (
+          <div className="sp-wrapper">
+          <div className="sp-img">
+            <img src={item?.image} alt="img"/>
+          </div>
+          <div className="sp-details">
+            <p className="sp-title">{item?.title}</p>
+            <p className="sp-desc">{item?.description}</p>
+            <p className="sp-price">price: ${item?.price} / </p>
+            <p className="sp-rate">{item?.rating.rate}<AiFillStar/></p>
+            <div className="add-btn">
+              <input type="button" value="Add to Cart" onClick={() => addCart(item)}/>
+            </div>
           </div>
         </div>
-      </div>
+        )
+      }
     </div>
   )
 }
