@@ -3,7 +3,7 @@
   min-height: 100svh;
   display: flex;
   justify-content: center;
-  align-items: start;
+  align-content: flex-start;
 }
 
 /*! FILTERS */

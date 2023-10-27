@@ -9,7 +9,7 @@ export default function NavBar() {
 
   const [itemCount, setItemCount] = useState(0)
 
-  const cart_items = useSelector(state => state.cart)
+  const cart_items = useSelector(state => state.cart.data)
 
   useEffect(()=>{
     let count = 0

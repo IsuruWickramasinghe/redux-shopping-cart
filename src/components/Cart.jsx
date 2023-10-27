@@ -13,7 +13,7 @@ export default function Cart() {
 
   const dispatch = useDispatch()
 
-  const cart_items = useSelector(state => state.cart)
+  const cart_items = useSelector(state => state.cart.data)
 
   const removeCart = (id) => {
     dispatch(remove_cart(id))
