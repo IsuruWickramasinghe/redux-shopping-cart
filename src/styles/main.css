@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root{
+
+  --font: 'Roboto', sans-serif;
+
+  /* colors */
+  --p-clr: #352F44;
+  --s-clr: #5C5470;
+  --t-clr: #B9B4C7;
+  --f-clr: #eeeeee;
+
+  /* padding */
+  --pd-d-xl: 14px 16px;
+  --pd-d-l: 12px 14px;
+  --pd-d-s: 10px 12px;
+  --pd-xl: 16px;
+  --pd-l: 14px;
+  --pd-s: 12px;
+  --pd-es: 6px;
+
+  /* gap */
+  --gp-d-xl: 14px 16px;
+  --gp-d-l: 12px 14px;
+  --gp-d-s: 10px 12px;
+  --gp-xl: 16px;
+  --gp-l: 14px;
+  --gp-s: 12px;
+  --gp-es: 6px;
+
+  /* nav bar */
+  --nav-height: 65px;
+
+  /* box shadow */
+  --bxs-1: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  --bxs-2: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  /* transition */
+  --tr: all .3s;
+
+}
+
+*{
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font);
+  color: var(--p-clr);
+  /* outline: 1px solid rgba(0, 0, 0, 0.685); */
+}
+#root{
+  width: 100%;
+  height: 100%;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+.footer{
+  background-color: var(--p-clr);
+  padding: 6px;
+}
+.footer p{
+  color: var(--f-clr);
+  font-size: 10px;
+  letter-spacing: 1px;
+}

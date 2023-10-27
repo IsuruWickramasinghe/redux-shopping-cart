@@ -1,0 +1,27 @@
+.nav-bar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--pd-xl);
+  height: var(--nav-height);
+  background-color: var(--p-clr);
+  color: var(--f-clr);
+  position: sticky;
+  z-index: 100;
+  top: 0;
+}
+.nav-cart-wrapper{
+  display: flex;
+  gap: var(--gp-l);
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  padding: 10px;
+}
+.nav-cart-wrapper *{
+  color: var(--f-clr);
+}
+.logo{
+  color: var(--f-clr);
+}
+

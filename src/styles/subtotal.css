@@ -1,0 +1,26 @@
+.subtotal{
+  padding: var(--pd-l);
+}
+.invoice{
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+  align-items: center;
+}
+.price{
+  font-size: 18px;
+  font-weight: 700;
+}
+.buy-btn{
+  width: 100%;
+  text-align: right;
+  padding: var(--pd-xl) 0;
+}
+.buy-btn input{
+  border: none;
+  width: 150px;
+  height: 35px;
+  color: var(--f-clr);
+  background-color: var(--p-clr);
+  border-radius: 6px;
+}
